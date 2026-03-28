@@ -33,13 +33,13 @@ End the program.
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
-image = cv2.imread('mammal.jpg', cv2.COLOR_BGR2RGB)
+image = cv2.imread('flower.jpg', cv2.COLOR_BGR2RGB)
 kernel = np.ones((5,5), dtype = np.float32) / 5**2
 print (kernel)
 ```
 i) Using Averaging Filter
 ```Python
-image = cv2.imread('mammal.jpg')
+image = cv2.imread('flower.jpg')
 dst = cv2.filter2D(image, ddepth = -1, kernel = kernel)
 plt.figure(figsize = [20,10])
 plt.subplot(121); plt.axis('off'); plt.imshow(image[:,:,::-1]); plt.title("Original Image")
@@ -92,36 +92,40 @@ plt.subplot(133); plt.imshow(laplacian_operator,cmap='gray'); plt.title('Output 
 ### 1. Smoothing Filters
 </br>
 
+
 i) Using Averaging Filter
-<img width="1233" height="459" alt="image" src="https://github.com/user-attachments/assets/6dbf0909-ed2c-46e0-a38b-6cd6a1de34c3" />
+
+
+<img width="1387" height="488" alt="image" src="https://github.com/user-attachments/assets/ae1cab44-3ddf-4ec0-96c9-d749a793a351" />
 
 
 ii)Using Weighted Averaging Filter
 
-<img width="1242" height="444" alt="image" src="https://github.com/user-attachments/assets/ca4925fc-04b6-45c3-89ff-832796c2d65c" />
+<img width="1375" height="502" alt="image" src="https://github.com/user-attachments/assets/ee27ed8d-2aed-4828-a8a3-bb57ac4ad3dc" />
+
 
 
 iii)Using Gaussian Filter
 
-<img width="1245" height="446" alt="image" src="https://github.com/user-attachments/assets/6755add8-cde5-44e2-868c-5f83d4d10062" />
+<img width="1371" height="486" alt="image" src="https://github.com/user-attachments/assets/2e13c3a9-bdbb-4b81-995c-1dd44e3a5d23" />
+
 
 
 iv) Using Median Filter
 
-<img width="1239" height="459" alt="image" src="https://github.com/user-attachments/assets/8d706a4f-1c82-4c28-9dc7-35ad0fd27954" />
-
+<img width="1378" height="496" alt="image" src="https://github.com/user-attachments/assets/65b7b857-cf4c-46d1-9d45-75b72f5f3f05" />
 
 ### 2. Sharpening Filters
 </br>
 
 i) Using Laplacian Kernal
 
-<img width="1242" height="464" alt="image" src="https://github.com/user-attachments/assets/be293c3d-70de-48e1-a5fc-74cb776b8451" />
+<img width="1373" height="505" alt="image" src="https://github.com/user-attachments/assets/86d54451-c9ea-4596-b326-74cacf9e367f" />
 
 
 ii) Using Laplacian Operator
 
-<img width="1243" height="333" alt="image" src="https://github.com/user-attachments/assets/376d25dc-21fd-416a-9d7d-91f8e9337ada" />
+<img width="1380" height="375" alt="image" src="https://github.com/user-attachments/assets/a16434ad-29a3-4a6f-8695-7036eaa05b43" />
 
 
 ## Result:
